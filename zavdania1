@@ -1,0 +1,23 @@
+#include <iostream>
+#include <forward_list>
+#include <string>
+using namespace std;
+
+int main() {
+    // Створення однозв'язного списку std::forward_list<string>
+    forward_list<string> services = {
+        "Google Drive",
+        "OneDrive",
+        "Dropbox",
+        "GitHub",
+        "iCloud"
+    };
+
+    // Виведення всіх елементів списку за допомогою ітератора
+    cout << "Елементи списку:" << endl;
+    for (auto it = services.begin(); it != services.end(); ++it) {
+        cout << *it << endl;
+    }
+
+    return 0;
+}
